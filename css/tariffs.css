@@ -1,0 +1,690 @@
+/* Pricing — desktop (Figma 34:551) */
+html[data-layout="desktop"] .pricing {
+  margin-top: 72rem;
+}
+
+html[data-layout="desktop"] .pricing-carousel__viewport {
+  overflow: visible;
+}
+
+html[data-layout="desktop"] .pricing-carousel__track {
+  padding: 0;
+  width: auto;
+}
+
+html[data-layout="desktop"] .pricing__grid {
+  display: flex;
+  gap: 16rem;
+  width: 1083rem;
+  margin: 0 auto;
+}
+
+html[data-layout="desktop"] .pricing-card {
+  position: relative;
+  box-sizing: border-box;
+  width: 350rem;
+  height: 568rem;
+  padding: 32rem 32rem 0;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+}
+
+html[data-layout="desktop"] .pricing-card__name {
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 32rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="desktop"] .pricing-card__price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8rem;
+  margin-top: 32rem;
+}
+
+html[data-layout="desktop"] .pricing-card__price {
+  font-family: var(--font-family-montserrat);
+  font-size: 42rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .pricing-card__period {
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .pricing-card__period--wide {
+  letter-spacing: -0.02em;
+}
+
+html[data-layout="desktop"] .pricing-card__desc {
+  margin: 32rem 0 0;
+  width: 256rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="desktop"] .pricing-card__desc--w262 {
+  width: 262rem;
+}
+
+html[data-layout="desktop"] .pricing-card__desc--w261 {
+  width: 261rem;
+}
+
+html[data-layout="desktop"] .pricing-card__features {
+  position: absolute;
+  left: 32rem;
+  top: 308rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html[data-layout="desktop"] .pricing-card__features--teams {
+  top: 268rem;
+}
+
+html[data-layout="desktop"] .pricing-card__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14rem;
+}
+
+html[data-layout="desktop"] .pricing-card__feature + .pricing-card__feature {
+  margin-top: 12rem;
+}
+
+html[data-layout="desktop"] .pricing-card__feature--multiline + .pricing-card__feature {
+  margin-top: 12rem;
+}
+
+html[data-layout="desktop"] .pricing-card__check {
+  display: block;
+  flex-shrink: 0;
+  width: 14rem;
+  height: 14rem;
+  margin-top: 2rem;
+}
+
+html[data-layout="desktop"] .pricing-card__feature span {
+  font-family: var(--font-family-montserrat);
+  font-size: 14rem;
+  font-weight: 500;
+  line-height: normal;
+  color: rgba(44, 44, 44, 0.8);
+}
+
+html[data-layout="desktop"] .pricing-card__feature--multiline span {
+  width: 218rem;
+}
+
+html[data-layout="desktop"] .pricing-card__cta {
+  position: absolute;
+  left: 32rem;
+  bottom: 32rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 286rem;
+  height: 42rem;
+  border-radius: 25rem;
+  background: var(--color-cabinet-bg);
+  font-family: var(--font-family-montserrat);
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #ffffff;
+  /* TODO: сделать кликабельной кнопкой */
+}
+
+html[data-layout="desktop"] .pricing-carousel__indicators {
+  display: none;
+}
+
+/* Bottom section — CEO quote + contact form */
+html[data-layout="desktop"] .tariffs-bottom {
+  position: relative;
+  width: 1083rem;
+  height: 454rem;
+  margin: 72rem auto 0;
+}
+
+html[data-layout="desktop"] .ceo-quote {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 531rem;
+  height: 336rem;
+  padding: 32rem;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="desktop"] .ceo-quote__text {
+  margin: 0;
+  width: 427rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 18rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="desktop"] .ceo-quote__author {
+  position: absolute;
+  left: 32rem;
+  bottom: 32rem;
+  display: flex;
+  align-items: center;
+  gap: 22rem;
+}
+
+html[data-layout="desktop"] .ceo-quote__avatar {
+  display: block;
+  flex-shrink: 0;
+  width: 62rem;
+  height: 62rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+html[data-layout="desktop"] .ceo-quote__name {
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .ceo-quote__role {
+  margin: 4rem 0 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 18rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .contact-form {
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  width: 531rem;
+  height: 454rem;
+  padding: 32rem 28rem;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="desktop"] .contact-form__title {
+  margin: 0 0 0 4rem;
+  width: 268rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="desktop"] .contact-form__field {
+  margin-top: 32rem;
+  margin-left: 4rem;
+}
+
+html[data-layout="desktop"] .contact-form__field + .contact-form__field {
+  margin-top: 22rem;
+}
+
+html[data-layout="desktop"] .contact-form__label {
+  display: block;
+  font-family: var(--font-family-montserrat);
+  font-size: 18rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .contact-form__required {
+  color: var(--color-accent-orange);
+}
+
+html[data-layout="desktop"] .contact-form__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 475rem;
+  height: 62rem;
+  margin-top: 12rem;
+  padding: 0 22rem;
+  border-radius: 30rem;
+  background: var(--color-hero-cta-bg);
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.5rem);
+  -webkit-backdrop-filter: blur(17.5rem);
+}
+
+html[data-layout="desktop"] .contact-form__placeholder {
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(44, 44, 44, 0.4);
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .contact-form__select-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 18rem;
+  height: 18rem;
+}
+
+html[data-layout="desktop"] .contact-form__submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 232rem;
+  height: 62rem;
+  margin-top: 32rem;
+  margin-left: 4rem;
+  padding: 0 22rem;
+  border-radius: 30rem;
+  background: var(--color-cabinet-bg);
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+  /* TODO: сделать кликабельной кнопкой */
+}
+
+html[data-layout="desktop"] .contact-form__submit-text {
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .contact-form__submit-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 18rem;
+  height: 18rem;
+}
+
+/* Footer spacing on tariffs page */
+html[data-layout="desktop"] .footer--tariffs {
+  margin-top: 162rem;
+  margin-bottom: 32rem;
+}
+
+/* Pricing carousel — mobile (Figma 34:767) */
+html[data-layout="mobile"] .pricing {
+  margin-top: 32rem;
+}
+
+html[data-layout="mobile"] .pricing-carousel__viewport {
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+html[data-layout="mobile"] .pricing-carousel__track {
+  display: flex;
+  gap: 22rem;
+  width: max-content;
+  padding-left: 21rem;
+  padding-right: 45rem;
+  will-change: transform;
+}
+
+html[data-layout="mobile"] .pricing__grid {
+  display: flex;
+  gap: 22rem;
+  width: max-content;
+  margin: 0;
+}
+
+html[data-layout="mobile"] .pricing-card {
+  position: relative;
+  flex: 0 0 350rem;
+  box-sizing: border-box;
+  width: 350rem;
+  height: 568rem;
+  padding: 32rem 32rem 0;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+}
+
+html[data-layout="mobile"] .pricing-card__name {
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 32rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="mobile"] .pricing-card__price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8rem;
+  margin-top: 32rem;
+}
+
+html[data-layout="mobile"] .pricing-card__price {
+  font-family: var(--font-family-montserrat);
+  font-size: 42rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .pricing-card__period {
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .pricing-card__desc {
+  margin: 32rem 0 0;
+  width: 256rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="mobile"] .pricing-card__desc--w262 {
+  width: 262rem;
+}
+
+html[data-layout="mobile"] .pricing-card__desc--w261 {
+  width: 261rem;
+}
+
+html[data-layout="mobile"] .pricing-card__features {
+  position: absolute;
+  left: 32rem;
+  top: 308rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html[data-layout="mobile"] .pricing-card__features--teams {
+  top: 268rem;
+}
+
+html[data-layout="mobile"] .pricing-card__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14rem;
+}
+
+html[data-layout="mobile"] .pricing-card__feature + .pricing-card__feature {
+  margin-top: 12rem;
+}
+
+html[data-layout="mobile"] .pricing-card__check {
+  display: block;
+  flex-shrink: 0;
+  width: 14rem;
+  height: 14rem;
+  margin-top: 2rem;
+}
+
+html[data-layout="mobile"] .pricing-card__feature span {
+  font-family: var(--font-family-montserrat);
+  font-size: 14rem;
+  font-weight: 500;
+  line-height: normal;
+  color: rgba(44, 44, 44, 0.8);
+}
+
+html[data-layout="mobile"] .pricing-card__feature--multiline span {
+  width: 218rem;
+}
+
+html[data-layout="mobile"] .pricing-card__cta {
+  position: absolute;
+  left: 32rem;
+  bottom: 32rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 286rem;
+  height: 42rem;
+  border-radius: 25rem;
+  background: var(--color-cabinet-bg);
+  font-family: var(--font-family-montserrat);
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #ffffff;
+}
+
+html[data-layout="mobile"] .pricing-carousel__indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rem;
+  margin-top: 22rem;
+}
+
+html[data-layout="mobile"] .pricing-carousel__indicator {
+  display: block;
+  width: 42rem;
+  height: 6rem;
+  border-radius: 10rem;
+  background: var(--color-hero-bg);
+  pointer-events: none;
+}
+
+html[data-layout="mobile"] .pricing-carousel__indicator.is-active {
+  background: var(--color-cabinet-bg);
+}
+
+/* Bottom section — mobile */
+html[data-layout="mobile"] .tariffs-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 22rem;
+  width: 396rem;
+  margin: 52rem auto 0;
+}
+
+html[data-layout="mobile"] .ceo-quote {
+  position: relative;
+  box-sizing: border-box;
+  width: 396rem;
+  height: 276rem;
+  padding: 22rem;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="mobile"] .ceo-quote__text {
+  margin: 0;
+  width: 339rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 18rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="mobile"] .ceo-quote__author {
+  position: absolute;
+  left: 22rem;
+  bottom: 22rem;
+  display: flex;
+  align-items: center;
+  gap: 22rem;
+}
+
+html[data-layout="mobile"] .ceo-quote__avatar {
+  display: block;
+  flex-shrink: 0;
+  width: 62rem;
+  height: 62rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+html[data-layout="mobile"] .ceo-quote__name {
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 20rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .ceo-quote__role {
+  margin: 4rem 0 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .contact-form {
+  position: static;
+  box-sizing: border-box;
+  width: 396rem;
+  height: 440rem;
+  padding: 22rem;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="mobile"] .contact-form__title {
+  margin: 0;
+  width: 290rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 24rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="mobile"] .contact-form__field {
+  margin-top: 32rem;
+  margin-left: 0;
+}
+
+html[data-layout="mobile"] .contact-form__field + .contact-form__field {
+  margin-top: 22rem;
+}
+
+html[data-layout="mobile"] .contact-form__label {
+  display: block;
+  font-family: var(--font-family-montserrat);
+  font-size: 18rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .contact-form__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 356rem;
+  height: 62rem;
+  margin-top: 12rem;
+  padding: 0 22rem;
+  border-radius: 30rem;
+  background: var(--color-hero-cta-bg);
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.5rem);
+  -webkit-backdrop-filter: blur(17.5rem);
+}
+
+html[data-layout="mobile"] .contact-form__placeholder {
+  font-family: var(--font-family-montserrat);
+  font-size: 20rem;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(44, 44, 44, 0.4);
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .contact-form__select-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 18rem;
+  height: 18rem;
+}
+
+html[data-layout="mobile"] .contact-form__submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 218rem;
+  height: 62rem;
+  margin-top: 32rem;
+  margin-left: 0;
+  padding: 0 22rem;
+  border-radius: 30rem;
+  background: var(--color-cabinet-bg);
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="mobile"] .contact-form__submit-text {
+  font-family: var(--font-family-montserrat);
+  font-size: 20rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .contact-form__submit-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 18rem;
+  height: 18rem;
+}
+
+html[data-layout="mobile"] .footer--tariffs {
+  margin-top: 82rem;
+  margin-bottom: 22rem;
+}

@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Secrets (if any appear later)
+.env
+.env.*
+!.env.example
+
+# Editor / local
+*.log
+.tmp/
+tmp/
+.vscode/
+!.vscode/extensions.json

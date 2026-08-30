@@ -1,0 +1,65 @@
+---
+alwaysApply: true
+---
+# Kutukov Business — базовые правила
+
+Статическая вёрстка лендинга A-Warehouse / Kutukov Business по Figma. Источник истины — код и `.cursor/rules/`. При расхождении верь коду.
+
+## Стек
+- Frontend: HTML + CSS + vanilla JS
+- Без React/Vue/Svelte, без Tailwind/Bootstrap и других UI-фреймворков
+- Без бэкенда, сборки и package-менеджера
+
+## Страницы
+Две страницы в `pages/`:
+- `pages/index.html` — главная (Desktop `34:468`, Mobile `34:683`)
+- `pages/tariffs.html` — тарифы (Desktop `34:551`, Mobile `34:767`)
+
+Связка: кнопка «Тарифы» в шапке → `tariffs.html`; лого → `index.html`.
+
+Figma fileKey: `ty23DDiiEoIMUmOgJ8paRO`
+
+## Артборды
+| Страница | Desktop | Mobile |
+| --- | --- | --- |
+| index | 1920×2455 | 440×3267 |
+| tariffs | 1920×1549 | 440×1701 |
+
+Высота артборда — **ориентир макета**; на сайте страница **скроллится** по естественной высоте контента.
+
+Контентная ширина: desktop **1083px** (центр), mobile **396px** (поля ~22px).
+
+## Фазы
+- Desktop: пиксель-в-пиксель по Figma
+- Mobile: пиксель-в-пиксель через `html[data-layout="mobile"]`
+- Adaptive: `js/design-viewport.js` + `css/layout.css` — выбор layout, **пропорциональный scale по ширине**, **page scroll**
+
+Ширина артборда на `<html>`: `data-artboard-w`, `data-artboard-w-mobile`. Высота (`data-artboard-h*`) — справочно для сверки с Figma.
+
+## Adaptive (layout)
+- Portrait → mobile; landscape &lt;1024 → mobile; landscape ≥1024 → desktop
+- Scale по ширине через `font-size` на `html` (1rem = 1px макета при эталонной ширине)
+- Desktop: `font-size: min(1px, 100vw / 1920)`; Mobile: `font-size: calc(100vw / 440)`
+- **Page scroll разрешён** — вертикальный скролл документа
+- Gate: ширина &lt;320px → заглушка
+- Stubs без layout-обёртки
+
+## Вёрстка по компонентам
+Не верстать страницу целиком. Порядок — см. `current_status.md`:
+- **index:** Header → Hero → Features → CTA cabinet → Warehouse → Video → Footer
+- **tariffs:** Header → Pricing → CEO quote → Contact form → Footer
+
+На каждом шаге: `get_design_context` + скриншот node-id → ассеты → desktop → mobile → adaptive.
+
+## Запреты
+- Не вводить фреймворки, препроцессоры, сборщики без явного запроса
+- Не создавать новые папки верхнего уровня без согласования
+- Не добавлять бизнес-логику: форма и кнопки — визуал; внешние URL → `pages/stubs/`
+- Не делать big-bang рефакторинг — только файлы текущей задачи
+- Не отключать page scroll (не использовать letterbox-fit всей страницы в viewport)
+- Не унифицировать расхождения desktop/mobile в текстах CTA без запроса (см. `current_status.md`)
+
+## Процесс
+- Перед изменениями перечисли файлы и подход; код — после подтверждения, если задача неоднозначна
+- Перед вёрсткой блока: `get_design_context` + скриншот по node-id из Figma
+- Ассеты качать из Figma MCP в `assets/<page>/`; не коммитить временные MCP URL

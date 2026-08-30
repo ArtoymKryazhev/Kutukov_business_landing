@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html
+  lang="ru"
+  data-artboard-w="1920"
+  data-artboard-h="1549"
+  data-artboard-w-mobile="440"
+  data-artboard-h-mobile="1701"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тарифы — A-Warehouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/tariffs.css" />
+  </head>
+  <body>
+    <div class="page page-tariffs">
+      <header class="header">
+        <div class="header__bar">
+          <a class="header__logo" href="index.html" aria-label="Kutukov Business — на главную">
+            <img src="../assets/index/logo.png" alt="" width="50" height="50" />
+          </a>
+          <div class="header__actions">
+            <a class="header__cta" href="tariffs.html">Тарифы</a>
+            <button
+              class="header__menu"
+              type="button"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+              data-menu-toggle
+            >
+              <img src="../assets/index/icon_burger_menu.svg" alt="" width="23" height="10" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="page-tariffs__main">
+        <section class="pricing" aria-label="Тарифы">
+          <div class="pricing-carousel">
+            <div
+              class="pricing-carousel__viewport"
+              data-carousel
+              data-carousel-indicators=".pricing-carousel__indicators"
+            >
+              <div class="pricing-carousel__track pricing__grid">
+                <article class="pricing-card carousel__item">
+                  <h2 class="pricing-card__name">Plus</h2>
+                  <div class="pricing-card__price-row">
+                    <span class="pricing-card__price">1 290₽</span>
+                    <span class="pricing-card__period">/мес.</span>
+                  </div>
+                  <p class="pricing-card__desc">
+                    В базовом тарифе доступны создание склада, управление товарами, интеграция с 1С
+                    и выгрузка данных в Excel.
+                  </p>
+                  <ul class="pricing-card__features">
+                    <li class="pricing-card__feature">
+                      <img
+                        class="pricing-card__check"
+                        src="../assets/tariffs/icon_check.svg"
+                        alt=""
+                        width="14"
+                        height="14"
+                      />
+                      <span>1x склад</span>
+                    </li>
+                    <li class="pricing-card__feature">
+                      <img
+                        class="pricing-card__check"
+                        src="../assets/tariffs/icon_check.svg"
+                        alt=""
+                        width="14"
+                        height="14"
+                      />
+                      <span>1Gb облачного хранилища</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-card__cta">90 дней бесплатно</div>
+                </article>
+                <article class="pricing-card carousel__item">
+                  <h2 class="pricing-card__name">Pro</h2>
+                  <div class="pricing-card__price-row">
+                    <span class="pricing-card__price">2 490₽</span>
+                    <span class="pricing-card__period">/мес.</span>
+                  </div>
+                  <p class="pricing-card__desc pricing-card__desc--w262">
+                    Pro+ объединяет возможности тарифа Pro и добавляет к ним неограниченное количество
+                    складов.
+                  </p>
+                  <ul class="pricing-card__features">
+                    <li class="pricing-card__feature pricing-card__feature--multiline">
+                      <img
+                        class="pricing-card__check"
+                        src="../assets/tariffs/icon_check.svg"
+                        alt=""
+                        width="14"
+                        height="14"
+                      />
+                      <span>Неограниченное количество складов</span>
+                    </li>
+                    <li class="pricing-card__feature">
+                      <img
+                        class="pricing-card__check"
+                        src="../assets/tariffs/icon_check.svg"
+                        alt=""
+                        width="14"
+                        height="14"
+                      />
+                      <span>2Gb облачного хранилища</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-card__cta">90 дней бесплатно</div>
+                </article>
+                <article class="pricing-card carousel__item">
+                  <h2 class="pricing-card__name">Teams</h2>
+                  <div class="pricing-card__price-row">
+                    <span class="pricing-card__price">2 490₽</span>
+                    <span class="pricing-card__period pricing-card__period--wide">/чел./мес.</span>
+                  </div>
+                  <p class="pricing-card__desc pricing-card__desc--w261">
+                    Все возможности тарифа Pro+ и еще дополнительные:
+                  </p>
+                  <ul class="pricing-card__features pricing-card__features--teams">
+                    <li class="pricing-card__feature pricing-card__feature--multiline">
+                      <img
+                        class="pricing-card__check"
+                        src="../assets/tariffs/icon_check.svg"
+                        alt=""
+                        width="14"
+                        height="14"
+                      />
+                      <span>Несколько аккаунтов в одном пространстве</span>
+                    </li>
+                    <li class="pricing-card__feature">
+                      <img
+                        class="pricing-card__check"
+                        src="../assets/tariffs/icon_check.svg"
+                        alt=""
+                        width="14"
+                        height="14"
+                      />
+                      <span>2Gb облачного хранилища</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-card__cta">90 дней бесплатно</div>
+                </article>
+              </div>
+            </div>
+            <div class="pricing-carousel__indicators" aria-hidden="true">
+              <span class="pricing-carousel__indicator is-active"></span>
+              <span class="pricing-carousel__indicator"></span>
+              <span class="pricing-carousel__indicator"></span>
+            </div>
+          </div>
+        </section>
+        <section class="tariffs-bottom" aria-label="Контакты и отзыв">
+          <div class="ceo-quote">
+            <p class="ceo-quote__text">
+              Она помогает считать остатки, планировать закупки, знать точное место вещей и
+              следить за их движением в реальном времени
+            </p>
+            <div class="ceo-quote__author">
+              <img
+                class="ceo-quote__avatar"
+                src="../assets/tariffs/profile_logo.jpg"
+                alt=""
+                width="62"
+                height="62"
+              />
+              <div class="ceo-quote__meta">
+                <p class="ceo-quote__name">Кутуков Альберт</p>
+                <p class="ceo-quote__role">CEO A-Warehouse &amp; CEO AKB</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h2 class="contact-form__title">Связаться с командой разработчиков</h2>
+            <div class="contact-form__field">
+              <label class="contact-form__label">
+                Рабочая почта <span class="contact-form__required">*</span>
+              </label>
+              <div class="contact-form__input">
+                <span class="contact-form__placeholder">alex@company.ru</span>
+              </div>
+            </div>
+            <div class="contact-form__field">
+              <label class="contact-form__label">
+                С чем вы хотите обратиться <span class="contact-form__required">*</span>
+              </label>
+              <div class="contact-form__input contact-form__input--select">
+                <span class="contact-form__placeholder">Выберите вопрос</span>
+                <img
+                  class="contact-form__select-icon"
+                  src="../assets/tariffs/icon_arrow_down.svg"
+                  alt=""
+                  width="18"
+                  height="18"
+                />
+              </div>
+            </div>
+            <div class="contact-form__submit">
+              <span class="contact-form__submit-text">Продолжить</span>
+              <img
+                class="contact-form__submit-icon"
+                src="../assets/tariffs/icon_arrow_white.svg"
+                alt=""
+                width="18"
+                height="18"
+              />
+            </div>
+          </div>
+        </section>
+        <footer class="footer footer--tariffs">
+          <div class="footer__bar">
+            <div class="footer__info">
+              <p class="footer__company">ООО АКБ, 2026</p>
+              <p class="footer__inn">ИНН 2315241885</p>
+            </div>
+            <div class="footer__socials">
+              <div class="footer__social">
+                <img src="../assets/index/vk_logo.png" alt="" width="52" height="52" />
+              </div>
+              <div class="footer__social">
+                <img src="../assets/index/telegram_logo.png" alt="" width="52" height="52" />
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <div class="viewport-unsupported" hidden>
+      Мы пока не поддерживаем этот формат. Откройте страницу на компьютере.
+    </div>
+    <script src="../js/design-viewport.js"></script>
+    <script src="../js/carousel.js"></script>
+  </body>
+</html>

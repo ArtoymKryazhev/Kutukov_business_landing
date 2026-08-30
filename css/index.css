@@ -1,0 +1,1068 @@
+/* Header — desktop (Group 23, Figma 34:469) */
+html[data-layout="desktop"] .page-index::before,
+html[data-layout="desktop"] .page-tariffs::before {
+  content: "";
+  display: block;
+  height: calc(32rem + 62rem);
+}
+
+html[data-layout="desktop"] .header {
+  position: fixed;
+  top: 32rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: calc(var(--design-w, 1920) * 1rem);
+  max-width: 100%;
+  margin-inline: auto;
+  pointer-events: none;
+}
+
+html[data-layout="desktop"] .header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1083rem;
+  height: 62rem;
+  margin: 0 auto;
+  padding: 0 42rem 0 21rem;
+  box-sizing: border-box;
+  border: 1rem solid var(--color-header-border);
+  border-radius: 30rem;
+  background: var(--color-header-bg);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(7.5rem);
+  -webkit-backdrop-filter: blur(7.5rem);
+  pointer-events: auto;
+}
+
+html[data-layout="desktop"] .header__logo {
+  display: block;
+  flex-shrink: 0;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+html[data-layout="desktop"] .header__logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+html[data-layout="desktop"] .header__actions {
+  display: flex;
+  align-items: center;
+  gap: 22rem;
+  flex-shrink: 0;
+}
+
+html[data-layout="desktop"] .header__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 138rem;
+  height: 50rem;
+  border-radius: 30rem;
+  background: var(--color-accent-orange);
+  color: #ffffff;
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 23rem;
+  height: 10rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  /* TODO: подключить открытие меню (stub pages/stubs/menu.html) */
+}
+
+html[data-layout="desktop"] .header__menu img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero — desktop (Frame 1597884518, Figma 34:479) */
+html[data-layout="desktop"] .hero {
+  margin-top: 72rem;
+}
+
+html[data-layout="desktop"] .hero__card {
+  position: relative;
+  width: 1083rem;
+  height: 390rem;
+  margin: 0 auto;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="desktop"] .hero__title {
+  position: absolute;
+  left: 32rem;
+  top: 32rem;
+  z-index: 1;
+  width: 504rem;
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 32rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="desktop"] .hero__subtitle {
+  position: absolute;
+  left: 32rem;
+  top: 122rem;
+  z-index: 1;
+  width: 564rem;
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text-muted);
+}
+
+html[data-layout="desktop"] .hero__cta {
+  position: absolute;
+  left: 30rem;
+  top: 268rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 340rem;
+  height: 76rem;
+  padding: 0 22rem;
+  box-sizing: border-box;
+  border-radius: 30rem;
+  background: var(--color-hero-cta-bg);
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.5rem);
+  -webkit-backdrop-filter: blur(17.5rem);
+  /* TODO: сделать кликабельной ссылкой/кнопкой */
+}
+
+html[data-layout="desktop"] .hero__cta-text {
+  font-family: var(--font-family-montserrat);
+  font-size: 26rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .hero__title-highlight {
+  color: inherit;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+html[data-layout="desktop"] .hero__subtitle-text--mobile {
+  display: none;
+}
+
+html[data-layout="desktop"] .hero__cta-icon--mobile {
+  display: none;
+}
+
+html[data-layout="desktop"] .hero__cta-icon--desktop {
+  display: block;
+}
+
+html[data-layout="desktop"] .hero__mac {
+  position: absolute;
+  top: 25rem;
+  right: 32rem;
+  z-index: 0;
+  width: 434rem;
+  height: 350rem;
+  object-fit: contain;
+  object-position: right top;
+  pointer-events: none;
+}
+
+/* Features — desktop (Frame 1597884522, Figma 128:4) */
+html[data-layout="desktop"] .features {
+  margin-top: 72rem;
+}
+
+html[data-layout="desktop"] .features__grid {
+  display: flex;
+  gap: 16rem;
+  width: 1083rem;
+  margin: 0 auto;
+}
+
+html[data-layout="desktop"] .feature-card {
+  box-sizing: border-box;
+  width: 350rem;
+  height: 271rem;
+  padding: 22rem 52rem 32rem 22rem;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="desktop"] .feature-card__badge {
+  position: relative;
+  width: 52rem;
+  height: 52rem;
+}
+
+html[data-layout="desktop"] .feature-card__badge-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+html[data-layout="desktop"] .feature-card__badge-num {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-montserrat);
+  font-size: 32rem;
+  font-weight: 600;
+  line-height: normal;
+  color: #ffffff;
+}
+
+html[data-layout="desktop"] .feature-card__title {
+  margin: 67rem 0 0 10rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="desktop"] .feature-card__title--w209 {
+  width: 209rem;
+}
+
+html[data-layout="desktop"] .feature-card__title--w241 {
+  width: 241rem;
+}
+
+html[data-layout="desktop"] .feature-card__title--w227 {
+  width: 227rem;
+}
+
+html[data-layout="desktop"] .feature-card__text {
+  margin: 10rem 0 0 10rem;
+  width: 266rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 14rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text-muted);
+}
+
+/* CTA cabinet — desktop (Frame 1597884523, Figma 128:5) */
+html[data-layout="desktop"] .cta-cabinet {
+  margin-top: 72rem;
+}
+
+html[data-layout="desktop"] .cta-cabinet__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 1083rem;
+  height: 95rem;
+  margin: 0 auto;
+  padding: 0 39rem 0 42rem;
+  background: var(--color-cabinet-bg);
+  border: 1rem solid var(--color-cabinet-border);
+  border-radius: 25rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="desktop"] .cta-cabinet__label {
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 600;
+  line-height: normal;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .cta-cabinet__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 199rem;
+  height: 52rem;
+  padding: 0 32rem;
+  box-sizing: border-box;
+  border-radius: 35rem;
+  background: #ffffff;
+  /* TODO: сделать кликабельной ссылкой/кнопкой */
+}
+
+html[data-layout="desktop"] .cta-cabinet__btn-text {
+  font-family: var(--font-family-montserrat);
+  font-size: 20rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .cta-cabinet__btn-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 18rem;
+  height: 18rem;
+}
+
+/* Warehouse — desktop (Frame 1597884524, Figma 128:6) */
+html[data-layout="desktop"] .warehouse {
+  margin-top: 72rem;
+}
+
+html[data-layout="desktop"] .warehouse__card {
+  position: relative;
+  width: 1083rem;
+  height: 564rem;
+  margin: 0 auto;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="desktop"] .warehouse__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rem 86rem 0 32rem;
+}
+
+html[data-layout="desktop"] .warehouse__title {
+  width: 405rem;
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 32rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="desktop"] .warehouse__text {
+  width: 398rem;
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 18rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text-muted);
+}
+
+html[data-layout="desktop"] .warehouse__screen {
+  position: absolute;
+  left: 32rem;
+  top: 190rem;
+  width: 1019rem;
+  height: 366rem;
+  border-radius: 25rem 25rem 0 0;
+  background: #ffffff;
+}
+
+/* Video — desktop (Frame 1597884525, Figma 128:7) */
+html[data-layout="desktop"] .video {
+  margin-top: 72rem;
+}
+
+html[data-layout="desktop"] .video__card {
+  position: relative;
+  width: 1083rem;
+  height: 392rem;
+  margin: 0 auto;
+  border-radius: 35rem;
+  background: linear-gradient(
+    to right,
+    var(--color-video-gradient-start),
+    var(--color-video-gradient-end)
+  );
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="desktop"] .video__title {
+  position: absolute;
+  left: 32rem;
+  top: 32rem;
+  width: 463rem;
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 32rem;
+  font-weight: 600;
+  line-height: normal;
+  color: #ffffff;
+}
+
+html[data-layout="desktop"] .video__actions {
+  position: absolute;
+  left: 32rem;
+  top: 218rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+html[data-layout="desktop"] .video__btn {
+  display: flex;
+  align-items: center;
+  width: 258rem;
+  height: 65rem;
+  padding: 0 32rem 0 22rem;
+  box-sizing: border-box;
+  border-radius: 30rem;
+  background: #ffffff;
+  /* TODO: сделать кликабельной ссылкой/кнопкой */
+}
+
+html[data-layout="desktop"] .video__btn-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 42rem;
+  height: 42rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+html[data-layout="desktop"] .video__btn-text {
+  flex: 1;
+  margin-left: 22rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #000000;
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .video__btn-arrow {
+  display: block;
+  flex-shrink: 0;
+  width: 20rem;
+  height: 20rem;
+}
+
+/* Footer — desktop (Group 28, Figma 34:540) */
+html[data-layout="desktop"] .footer {
+  margin-top: 162rem;
+  margin-bottom: 32rem;
+}
+
+html[data-layout="desktop"] .footer__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 1083rem;
+  height: 95rem;
+  margin: 0 auto;
+  padding: 0 42rem;
+  background: var(--color-footer-bg);
+  border: 1rem solid var(--color-footer-border);
+  border-radius: 25rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="desktop"] .footer__company {
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .footer__inn {
+  margin: 4rem 0 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+html[data-layout="desktop"] .footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  flex-shrink: 0;
+}
+
+html[data-layout="desktop"] .footer__social {
+  width: 52rem;
+  height: 52rem;
+  border-radius: 30rem;
+  overflow: hidden;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+  /* TODO: сделать кликабельной ссылкой */
+}
+
+html[data-layout="desktop"] .footer__social img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Header — mobile (Group 23, Figma 34:684) */
+html[data-layout="mobile"] .page-index::before,
+html[data-layout="mobile"] .page-tariffs::before {
+  content: "";
+  display: block;
+  height: calc(22rem + 62rem);
+}
+
+html[data-layout="mobile"] .header {
+  position: fixed;
+  top: 22rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: calc(var(--design-w, 440) * 1rem);
+  max-width: 100%;
+  margin-inline: auto;
+  pointer-events: none;
+}
+
+html[data-layout="mobile"] .header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 396rem;
+  height: 62rem;
+  margin: 0 auto;
+  padding: 0 21rem 0 6rem;
+  box-sizing: border-box;
+  border: 1rem solid var(--color-header-border);
+  border-radius: 30rem;
+  background: var(--color-header-bg);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(7.5rem);
+  -webkit-backdrop-filter: blur(7.5rem);
+  pointer-events: auto;
+}
+
+html[data-layout="mobile"] .header__logo {
+  display: block;
+  flex-shrink: 0;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+html[data-layout="mobile"] .header__logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+html[data-layout="mobile"] .header__actions {
+  display: flex;
+  align-items: center;
+  gap: 22rem;
+  flex-shrink: 0;
+}
+
+html[data-layout="mobile"] .header__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 138rem;
+  height: 50rem;
+  border-radius: 30rem;
+  background: var(--color-accent-orange);
+  color: #ffffff;
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 23rem;
+  height: 10rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+html[data-layout="mobile"] .header__menu img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero — mobile (Frame 1597884521, Figma 34:694) */
+html[data-layout="mobile"] .hero {
+  margin-top: 32rem;
+}
+
+html[data-layout="mobile"] .hero__card {
+  position: relative;
+  width: 396rem;
+  height: 629rem;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="mobile"] .hero__title {
+  position: absolute;
+  left: 22rem;
+  top: 22rem;
+  z-index: 2;
+  width: 275rem;
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 28rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="mobile"] .hero__title-highlight {
+  display: inline-block;
+  padding: 0 8rem;
+  border-radius: 30rem;
+  background: var(--color-accent-orange);
+  color: #ffffff;
+}
+
+html[data-layout="mobile"] .hero__subtitle {
+  position: absolute;
+  left: 22rem;
+  top: 136rem;
+  z-index: 2;
+  width: 359rem;
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text-muted);
+}
+
+html[data-layout="mobile"] .hero__subtitle-text--desktop {
+  display: none;
+}
+
+html[data-layout="mobile"] .hero__cta {
+  position: absolute;
+  left: 22rem;
+  top: 545rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 352rem;
+  height: 62rem;
+  padding: 0 24rem;
+  box-sizing: border-box;
+  border-radius: 23.647rem;
+  background: var(--color-cabinet-bg);
+  box-shadow: 0 0 3.153rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5rem);
+  -webkit-backdrop-filter: blur(7.5rem);
+}
+
+html[data-layout="mobile"] .hero__cta-text {
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .hero__cta-icon--desktop {
+  display: none;
+}
+
+html[data-layout="mobile"] .hero__cta-icon--mobile {
+  display: block;
+  flex-shrink: 0;
+  width: 16rem;
+  height: 16rem;
+}
+
+html[data-layout="mobile"] .hero__mac {
+  position: absolute;
+  left: -18rem;
+  top: 224rem;
+  z-index: 1;
+  width: 577rem;
+  height: 470rem;
+  max-width: none;
+  object-fit: cover;
+  object-position: left top;
+  pointer-events: none;
+}
+
+/* Features — mobile (Figma 34:715–729) */
+html[data-layout="mobile"] .features {
+  margin-top: 52rem;
+}
+
+html[data-layout="mobile"] .features__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  width: 396rem;
+  margin: 0 auto;
+}
+
+html[data-layout="mobile"] .feature-card {
+  box-sizing: border-box;
+  width: 396rem;
+  height: 246rem;
+  padding: 22rem;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="mobile"] .feature-card__badge {
+  position: relative;
+  width: 52rem;
+  height: 52rem;
+}
+
+html[data-layout="mobile"] .feature-card__badge-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+html[data-layout="mobile"] .feature-card__badge-num {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-montserrat);
+  font-size: 32rem;
+  font-weight: 600;
+  line-height: normal;
+  color: #ffffff;
+}
+
+html[data-layout="mobile"] .feature-card__title {
+  margin: 38rem 0 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="mobile"] .feature-card__title--w209 {
+  width: 230rem;
+}
+
+html[data-layout="mobile"] .feature-card__title--w241 {
+  width: 241rem;
+}
+
+html[data-layout="mobile"] .feature-card__title--w227 {
+  width: 247rem;
+}
+
+html[data-layout="mobile"] .feature-card__text {
+  margin: 10rem 0 0;
+  width: 266rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 14rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text-muted);
+}
+
+/* CTA cabinet — mobile (Group 1597884527, Figma 105:30) */
+html[data-layout="mobile"] .cta-cabinet {
+  margin-top: 52rem;
+}
+
+html[data-layout="mobile"] .cta-cabinet__bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 396rem;
+  height: 176rem;
+  margin: 0 auto;
+  padding: 22rem;
+  background: var(--color-cabinet-bg);
+  border: 1rem solid var(--color-cabinet-border);
+  border-radius: 25rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="mobile"] .cta-cabinet__label {
+  margin: 0;
+  width: 221rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 24rem;
+  font-weight: 600;
+  line-height: normal;
+  color: #ffffff;
+}
+
+html[data-layout="mobile"] .cta-cabinet__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 199rem;
+  height: 52rem;
+  margin-top: 22rem;
+  padding: 0 32rem;
+  box-sizing: border-box;
+  border-radius: 35rem;
+  background: #ffffff;
+}
+
+html[data-layout="mobile"] .cta-cabinet__btn-text {
+  font-family: var(--font-family-montserrat);
+  font-size: 20rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .cta-cabinet__btn-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 18rem;
+  height: 18rem;
+}
+
+/* Warehouse — mobile (Group 1597884519, Figma 34:736) */
+html[data-layout="mobile"] .warehouse {
+  margin-top: 52rem;
+}
+
+html[data-layout="mobile"] .warehouse__card {
+  position: relative;
+  width: 396rem;
+  height: 587rem;
+  margin: 0 auto;
+  background: var(--color-hero-bg);
+  border-radius: 35rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="mobile"] .warehouse__header {
+  display: block;
+  padding: 22rem 22rem 0;
+}
+
+html[data-layout="mobile"] .warehouse__title {
+  width: 270rem;
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 24rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+html[data-layout="mobile"] .warehouse__text {
+  width: 340rem;
+  margin: 12rem 0 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 14rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text-muted);
+}
+
+html[data-layout="mobile"] .warehouse__screen {
+  position: absolute;
+  left: 22rem;
+  top: 185rem;
+  width: 352rem;
+  height: 390rem;
+  border-radius: 25rem 25rem 10rem 10rem;
+  background: #ffffff;
+}
+
+/* Video — mobile (Group 1597884506, Figma 34:741) */
+html[data-layout="mobile"] .video {
+  margin-top: 52rem;
+}
+
+html[data-layout="mobile"] .video__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 396rem;
+  min-height: 590rem;
+  margin: 0 auto;
+  padding: 22rem;
+  border-radius: 35rem;
+  background: linear-gradient(
+    to right,
+    var(--color-video-gradient-start),
+    var(--color-video-gradient-end)
+  );
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="mobile"] .video__title {
+  position: static;
+  width: 315rem;
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 28rem;
+  font-weight: 600;
+  line-height: normal;
+  color: #ffffff;
+}
+
+html[data-layout="mobile"] .video__actions {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  margin-top: 28rem;
+}
+
+html[data-layout="mobile"] .video__btn {
+  display: flex;
+  align-items: center;
+  width: 258rem;
+  height: 65rem;
+  padding: 0 32rem 0 22rem;
+  box-sizing: border-box;
+  border-radius: 30rem;
+  background: #ffffff;
+}
+
+html[data-layout="mobile"] .video__btn-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 42rem;
+  height: 42rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+html[data-layout="mobile"] .video__btn-text {
+  flex: 1;
+  margin-left: 22rem;
+  font-family: var(--font-family-montserrat);
+  font-size: 22rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #000000;
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .video__btn-arrow {
+  display: block;
+  flex-shrink: 0;
+  width: 20rem;
+  height: 20rem;
+}
+
+/* Footer — mobile (Group 28, Figma 34:756) */
+html[data-layout="mobile"] .footer {
+  margin-top: 82rem;
+  margin-bottom: 22rem;
+}
+
+html[data-layout="mobile"] .footer__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 396rem;
+  height: 95rem;
+  margin: 0 auto;
+  padding: 0 22rem;
+  background: var(--color-footer-bg);
+  border: 1rem solid var(--color-footer-border);
+  border-radius: 25rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="mobile"] .footer__company {
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 20rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .footer__inn {
+  margin: 4rem 0 0;
+  font-family: var(--font-family-montserrat);
+  font-size: 14rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+html[data-layout="mobile"] .footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  flex-shrink: 0;
+}
+
+html[data-layout="mobile"] .footer__social {
+  width: 42rem;
+  height: 42rem;
+  border-radius: 30rem;
+  overflow: hidden;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+}
+
+html[data-layout="mobile"] .footer__social img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

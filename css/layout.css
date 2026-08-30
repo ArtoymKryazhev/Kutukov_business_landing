@@ -1,0 +1,87 @@
+html {
+  overflow-x: clip;
+  scrollbar-gutter: stable;
+  /* fallback до design-viewport.js */
+  font-size: min(1px, calc(100vw / 1920));
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--color-bg, #ffffff);
+}
+
+body {
+  overflow-y: auto;
+}
+
+.page {
+  width: calc(var(--design-w, 1920) * 1rem);
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+/* Desktop: пропорциональный scale по ширине (1rem = 1px макета при 1920) */
+html[data-layout="desktop"] {
+  font-size: min(1px, calc(100vw / var(--design-w, 1920)));
+}
+
+/* Mobile + tablet: один scale (подключится вместе с mobile-вёрсткой) */
+html[data-layout="mobile"][data-viewport="ok"] {
+  font-size: calc(100vw / var(--design-w, 440));
+}
+
+/* Заглушка: обычный px, без rem-scale */
+html[data-layout="mobile"][data-viewport="unsupported"] {
+  font-size: 16px;
+}
+
+/* До JS — заглушка только если viewport явно unsupported */
+@media (max-width: 1023px) {
+  html[data-viewport="unsupported"] .page {
+    display: none !important;
+  }
+
+  html[data-viewport="unsupported"] .viewport-unsupported {
+    display: flex !important;
+  }
+
+  html[data-viewport="unsupported"] .viewport-unsupported[hidden] {
+    display: flex !important;
+  }
+}
+
+.viewport-unsupported {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background: var(--color-bg, #ffffff);
+  color: var(--color-text, #2c2c2c);
+  font-family: var(--font-family-montserrat, system-ui, sans-serif);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 100%;
+  z-index: 1000;
+}
+
+.viewport-unsupported[hidden] {
+  display: none !important;
+}
+
+html[data-viewport="unsupported"] .page {
+  display: none !important;
+}
+
+html[data-viewport="unsupported"] .viewport-unsupported {
+  display: flex !important;
+}
+
+html[data-viewport="unsupported"] .viewport-unsupported[hidden] {
+  display: flex !important;
+}

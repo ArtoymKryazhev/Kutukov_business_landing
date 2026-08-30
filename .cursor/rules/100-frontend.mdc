@@ -1,0 +1,37 @@
+---
+globs: **/*.html, **/*.css, **/*.js, assets/**
+alwaysApply: false
+---
+# Frontend — HTML / CSS / JS
+
+## Разметка и стили
+- Семантичный HTML (`header`, `main`, `section`, `button`/`a` по смыслу).
+- Стили в CSS-файлах (`css/`, `css/index.css`, `css/tariffs.css`). Не инлайн-стили без нужды.
+- Общие токены — в `css/tokens.css` (цвета, шрифты, размеры из Figma).
+- Desktop: макет **1920px** ширины. Mobile: **440px** через `html[data-layout="mobile"]` (не `@media`).
+- Размеры блоков в CSS — в **rem** (1rem = 1px макета при эталонной ширине артборда).
+- Обёртка `.page` + `css/layout.css`; **page scroll разрешён**.
+
+## Adaptive
+- `js/design-viewport.js`: выбор layout, `--design-w`, resize/orientationchange.
+- Portrait → mobile; landscape &lt;1024 → mobile; landscape ≥1024 → desktop.
+- Scale по ширине: desktop `min(1px, 100vw/1920)`, mobile `100vw/440`.
+- Gate: ширина &lt;320px → `.viewport-unsupported`.
+- Stubs без layout-обёртки.
+
+## Ассеты
+- Экспортировать из Figma MCP, класть в `assets/index/` или `assets/tariffs/`.
+- Не рисовать иконки/mockup руками и не подставлять чужие SVG.
+- В HTML — только локальные пути к ассетам в репо, не временные `figma.com/api/mcp/asset/...` URL.
+
+## JS
+- Viewport: `js/design-viewport.js` на обеих страницах.
+- Карусель тарифов (mobile): `js/carousel.js` на `tariffs.html`, контейнер `[data-carousel]`, элементы `.carousel__item`.
+- Никакой отправки форм, API-вызовов, авторизации.
+
+## Shared header / footer
+- Дублируются в HTML обеих страниц (как в эталонном проекте).
+- BEM: `.header`, `.footer` и модификаторы.
+
+## Эталон
+- Каркас страницы: `examples/page-skeleton.html`
